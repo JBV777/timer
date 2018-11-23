@@ -1,5 +1,6 @@
 package com.example.timer;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,16 +20,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.prompt);
         //links button with "Start timer" button on prompt
         Button start=(Button) findViewById(R.id.button2);
-        hours=findViewById(R.id.editText2);
-        userhours=hours.getText().toString();
-        minutes=findViewById(R.id.editText3);
-        userminutes=minutes.getText().toString();
-        seconds=findViewById(R.id.editText4);
-        userseconds=seconds.getText().toString();
+        hours=(EditText) findViewById(R.id.editText2);
+        minutes=(EditText) findViewById(R.id.editText3);
+        seconds=(EditText) findViewById(R.id.editText4);
         start.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                //setContentView(R.layout.countdown);
-                Toast.makeText(MainActivity.this,userhours,Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this,countdown.class));
+                //userhours=hours.getText().toString();
+                //userminutes=minutes.getText().toString();
+                //userseconds=seconds.getText().toString();
             }
 
 
