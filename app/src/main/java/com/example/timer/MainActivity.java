@@ -25,10 +25,15 @@ public class MainActivity extends AppCompatActivity {
         seconds=(EditText) findViewById(R.id.editText4);
         start.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(MainActivity.this,countdown.class));
-                //userhours=hours.getText().toString();
-                //userminutes=minutes.getText().toString();
-                //userseconds=seconds.getText().toString();
+                userhours=hours.getText().toString();
+                userminutes=minutes.getText().toString();
+                userseconds=seconds.getText().toString();
+                //String value="tester";
+                Intent count=new Intent(MainActivity.this,countdown.class);
+                count.putExtra("key",userhours);
+                count.putExtra("key2",userminutes);
+                count.putExtra("key3",userseconds);
+                startActivity(count);
             }
 
 
