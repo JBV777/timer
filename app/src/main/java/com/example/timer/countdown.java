@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.os.CountDownTimer;
+import android.widget.Toast;
 
 public class countdown extends AppCompatActivity{
     String runhour,runminutes,runseconds;
@@ -46,7 +47,7 @@ public class countdown extends AppCompatActivity{
                 }
 
                 public void onFinish() {
-                    seconds.setText("time's up");
+                    Toast.makeText(getApplicationContext(),"Time is up",Toast.LENGTH_SHORT).show();
                 }
             }.start();
 
