@@ -28,12 +28,18 @@ public class MainActivity extends AppCompatActivity {
                 userhours=hours.getText().toString();
                 userminutes=minutes.getText().toString();
                 userseconds=seconds.getText().toString();
-                //String value="tester";
-                Intent count=new Intent(MainActivity.this,countdown.class);
-                count.putExtra("key",userhours);
-                count.putExtra("key2",userminutes);
-                count.putExtra("key3",userseconds);
-                startActivity(count);
+                if (userhours.equals("")||userminutes.equals("")||userseconds==""){
+                    Toast.makeText(getApplicationContext(),"Please enter a valid time",Toast.LENGTH_SHORT).show();
+                }else if (userhours.equals("0")&&userminutes.equals("0")&&userseconds.equals("0")){
+                    Toast.makeText(getApplicationContext(),"You cannot set timer to 0", Toast.LENGTH_SHORT).show();
+                }else {
+                    //String value="tester";
+                    Intent count = new Intent(MainActivity.this, countdown.class);
+                    count.putExtra("key", userhours);
+                    count.putExtra("key2", userminutes);
+                    count.putExtra("key3", userseconds);
+                    startActivity(count);
+                }
             }
 
 
