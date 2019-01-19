@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class countdown extends AppCompatActivity{
     String runhour,runminutes,runseconds;
     int h,m,s,totaltime;
-    Button reset, newtime, pause, resume;
+    Button newtime, pause, resume;
     int pauseclicked=0;
     int resumeclicked=0;
     CountDownTimer c;
@@ -23,7 +23,6 @@ public class countdown extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.countdown);
 
-        reset=(Button)findViewById(R.id.button);
         newtime=(Button)findViewById(R.id.button3);
         pause=(Button)findViewById(R.id.button4);
         resume=(Button)findViewById(R.id.button5);

@@ -65,20 +65,11 @@
         android:layout_alignTop="@+id/textView11" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="15dp"
-        android:layout_toStartOf="@+id/textView12"
-        android:text="reset" />
-
-    <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView11"
-        android:layout_alignTop="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:text="new time" />
 
     <Button
