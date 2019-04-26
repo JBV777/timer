@@ -8,7 +8,7 @@ Developed By:
 
 
 Screenshots:
-
+![alt text](https://github.com/JBV777/timer/blob/master/screenshots/homescreen.png)
 
 
 Possible improvements:
