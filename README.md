@@ -12,9 +12,7 @@ Screenshots:
 
 
 
-![alt text](https://github.com/JBV777/timer/blob/master/screenshots/homescreen.png)
-![alt text](https://github.com/JBV777/timer/blob/master/screenshots/countdown-start.png)
-![alt text](https://github.com/JBV777/timer/blob/master/screenshots/countdown.png)
+![alt text](https://github.com/JBV777/timer/blob/master/screenshots/homescreen.png) ![alt text](https://github.com/JBV777/timer/blob/master/screenshots/countdown-start.png) ![alt text](https://github.com/JBV777/timer/blob/master/screenshots/countdown.png)
 
 
 
